@@ -1,7 +1,6 @@
 /*! BASE START */
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -104,6 +103,14 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+}
+.header-mobile {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.header-center .bi-x-circle {
+  display: none;
 }
 .menu-list {
   display: flex;
@@ -253,6 +260,7 @@ header .menu-dropdown-content a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 .modal-search::after {
   content: "";
@@ -365,3 +373,95 @@ header .menu-dropdown-content a:hover {
   color: #7a7a7a;
 }
 /*! MODAL SEARCH END */
+
+/*! Container Responsive Start */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 350px;
+  }
+}
+.a-mobile {
+  display: none;
+}
+@media (max-width: 590px) {
+  .global-notification p span {
+    display: none;
+  }
+  .a-mobile {
+    display: block;
+  }
+}
+/*! Container Responsive End */
+
+/*! Header Responsive Start */
+@media (max-width: 650px) {
+  .header-center {
+    position: fixed;
+    left: -100%;
+    top: 46px;
+    border-right: 1px solid #dee0ea;
+    height: 100%;
+    background-color: white;
+  }
+  .header-center .bi-x-circle {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #7a7a7a;
+  }
+  .menu-list-item:hover .menu-dropdown-wrapper {
+    display: none;
+  }
+  .menu-list-item:hover .mega-dropdown-wrapper {
+    display: none;
+  }
+  .header-center i {
+    display: none;
+  }
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 75px 50px 40px;
+  }
+  .menu-list-item a {
+    font-size: 16px;
+  }
+  .header-mobile {
+    display: inline-block;
+  }
+}
+/*! Header Responsive End */
+
+/*! Modal Search Responsive Start */
+@media (max-width: 992px) {
+  .modal-search .modal-wrapper {
+    max-width: 370px;
+  }
+  .modal-search .results {
+    grid-template-columns: 1fr;
+  }
+}
+/*! Modal Search Responsive End */
