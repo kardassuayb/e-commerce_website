@@ -1,0 +1,210 @@
+/*! HEADER START */
+
+header {
+  border-bottom: 1px solid #dee0ea;
+}
+.global-notification {
+  background-color: #1367ef;
+  padding: 14px 0px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+.global-notification a {
+  font-weight: 600;
+  color: white;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.header-mobile {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.header-center .bi-x-circle {
+  display: none;
+}
+.menu-list {
+  display: flex;
+  margin-right: 5px;
+  column-gap: 30px;
+}
+.menu-list-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 90px;
+}
+.menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+.header-right-links {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+.search-toggle {
+  border: none;
+  background: transparent;
+}
+.header-right i {
+  font-size: 18px;
+}
+.header-right .bi-person {
+  font-size: 23px;
+}
+.header-right .bi-cart {
+  font-size: 21px;
+}
+.header-cart {
+  position: relative;
+}
+.header-cart-count {
+  position: absolute;
+  right: -9px;
+  top: -9px;
+  padding: 0px 4px;
+  background-color: #1367ef;
+  color: white;
+  border-radius: 100%;
+  font-size: 12px;
+}
+.header-center .menu-link:hover {
+  border-bottom: 1px solid #1367ef;
+  color: #1367ef;
+  transition: 0.2s ease;
+}
+.header-center .menu-link.active {
+  border-bottom: 1px solid #1367ef;
+}
+
+/*! MENU DROPDOWN START */
+header .menu-dropdown-wrapper {
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: -30px;
+  background-color: white;
+  border: 1px solid #dee0ea;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.2s ease;
+}
+header .menu-dropdown-content {
+  width: max-content;
+  padding: 10px 15px;
+  line-height: 22px;
+}
+header .menu-dropdown-content a {
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+header .menu-dropdown-content a:hover {
+  color: #1367ef;
+}
+.menu-list-item:hover .menu-dropdown-wrapper {
+  display: block;
+}
+/*! MENU DROPDOWN END */
+
+/*! MEGA DROPDOWN START */
+.mega-dropdown-wrapper {
+  position: absolute;
+  width: max-content;
+  top: 90px;
+  left: -280px;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #dee0ea;
+  border-radius: 0 0 5px 5px;
+  /* transition: all 0.2s ease; */
+}
+.list-menu {
+  display: flex;
+  column-gap: 50px;
+}
+.list-menu li {
+  line-height: 26px;
+}
+.list-menu h3 {
+  margin-bottom: 5px;
+  transition: color 0.2s ease;
+}
+.list-menu li a {
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+.list-menu li a:hover {
+  color: #1367ef;
+}
+.mega-dropdown-wrapper .img-menu button {
+  padding: 0px 15px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mega-dropdown-wrapper .img-menu button:hover {
+  color: white;
+  background-color: #1367ef;
+  border: 1px solid #1367ef;
+  transition: color 0.2s ease;
+}
+.menu-list-item:hover .mega-dropdown-wrapper {
+  visibility: visible;
+}
+/*! MEGA DROPDOWN END */
+
+/*! HEADER END */
+
+/*! Header Responsive Start */
+@media (max-width: 650px) {
+  .header-center {
+    position: fixed;
+    left: -100%;
+    top: 46px;
+    border-right: 1px solid #dee0ea;
+    height: 100%;
+    background-color: white;
+  }
+  .header-center .bi-x-circle {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #7a7a7a;
+  }
+  .menu-list-item:hover .menu-dropdown-wrapper {
+    display: none;
+  }
+  .menu-list-item:hover .mega-dropdown-wrapper {
+    display: none;
+  }
+  .header-center i {
+    display: none;
+  }
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 75px 50px 40px;
+  }
+  .menu-list-item a {
+    font-size: 16px;
+  }
+  .header-mobile {
+    display: inline-block;
+  }
+}
+/*! Header Responsive End */
