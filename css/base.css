@@ -36,8 +36,8 @@ button {
 }
 .btn {
   border: none;
-  background-color: white;
-  color: #1367ef;
+  background-color: #1367ef;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
@@ -45,20 +45,20 @@ button {
   transition: 0.2s all ease;
 }
 .btn-sm {
-  padding: 0px 10px;
+  padding: 1px 10px;
   line-height: 28px;
 }
 .btn-md {
-  padding: 0px 15px;
+  padding: 2px 15px;
   line-height: 33px;
 }
 .btn-lg {
-  padding: 0px 20px;
+  padding: 3px 20px;
   line-height: 38px;
 }
 .btn:hover {
-  color: white;
-  background-color: #1367ef;
+  color: #1367ef;
+  background-color: white;
 }
 input[type="text"],
 input[type="password"],
