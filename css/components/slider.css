@@ -55,6 +55,7 @@
   opacity: 1;
   color: white;
   border-color: #1367ef;
+  cursor: pointer;
 }
 .slider .slider-dots {
   position: absolute;

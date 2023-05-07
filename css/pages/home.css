@@ -1,0 +1,23 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.section-title p {
+  opacity: 0.7;
+}
+
+/*! Categories Start */
+.categories {
+  margin: 40px 0;
+}
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+/*! Categories End */
