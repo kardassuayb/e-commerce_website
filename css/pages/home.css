@@ -21,3 +21,15 @@
   margin-top: 30px;
 }
 /*! Categories End */
+
+/*! Products Start */
+.products {
+  margin: 40px 0;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+/*! Products End */
