@@ -9,6 +9,7 @@
 @import url(components/slider.css);
 @import url(components/category-items.css);
 @import url(components/product-items.css);
+@import url(components/campaign-items.css);
 
 /* pages */
 @import url(pages/home.css);

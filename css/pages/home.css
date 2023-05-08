@@ -17,7 +17,7 @@
 .category-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  gap: 30px;
   margin-top: 30px;
 }
 /*! Categories End */
@@ -29,6 +29,15 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 /*! Products End */
+
+/*! Campaigns Start */
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+/*! Campaigns End */
