@@ -24,12 +24,11 @@
 
 /*! Products Start */
 .products {
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
-  margin-top: 30px;
+  gap: 20px;
 }
 /*! Products End */
