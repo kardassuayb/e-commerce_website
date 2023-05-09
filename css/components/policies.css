@@ -1,0 +1,23 @@
+.policy .policy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.policy .policy-item {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  gap: 10px;
+  padding: 10px;
+}
+.policy .policy-info {
+  display: flex;
+  flex-direction: column;
+}
+.policy .policy-item i {
+  font-size: 40px;
+}
+.policy .policy-item span {
+  font-size: 14px;
+  color: #b1b1b1;
+}
