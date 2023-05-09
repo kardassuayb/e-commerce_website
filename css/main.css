@@ -10,6 +10,8 @@
 @import url(components/category-items.css);
 @import url(components/product-items.css);
 @import url(components/campaign-items.css);
+@import url(components/blog-items.css);
+@import url(components/brand-items.css);
 
 /* pages */
 @import url(pages/home.css);

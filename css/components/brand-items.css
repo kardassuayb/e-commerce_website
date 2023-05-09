@@ -1,0 +1,16 @@
+.brands .brand-item {
+  border: 1px solid #dee0ea;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.brands .brand-item img {
+  opacity: 0.5;
+  transition: 0.2s ease opacity;
+}
+.brands .brand-item img:hover {
+  opacity: 1;
+}
