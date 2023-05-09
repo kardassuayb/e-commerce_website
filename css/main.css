@@ -12,6 +12,7 @@
 @import url(components/campaign-items.css);
 @import url(components/blog-items.css);
 @import url(components/brand-items.css);
+@import url(components/single-campaign.css);
 
 /* pages */
 @import url(pages/home.css);

@@ -1,0 +1,69 @@
+.single-campaign {
+  background-image: url(../../images/single-campaign.png);
+  background-attachment: fixed;
+  padding: 140px 15px;
+  margin: 30px 0;
+}
+.single-campaign .campaign-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.single-campaign .campaign-wrapper h2 {
+  font-size: 25px;
+}
+.single-campaign .campaign-wrapper strong {
+  font-size: 55px;
+  font-weight: 600;
+}
+.single-campaign .campaign-wrapper span {
+  background-color: white;
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+}
+.single-campaign .campaign-wrapper a {
+  background-color: white;
+  color: #1367ef;
+  border-color: #1367ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-campaign .campaign-wrapper a:hover {
+  background-color: #1367ef;
+  color: white;
+  border-color: #1367ef;
+}
+.single-campaign .campaign-wrapper a i {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .single-campaign {
+    background-image: url(../../images/modal-dialog.jpg);
+    background-size: 100% 100%;
+  }
+  .single-campaign .campaign-wrapper {
+    color: #002155;
+  }
+  .single-campaign .campaign-wrapper a {
+    background-color: #1367ef;
+    color: white;
+    border-color: #1367ef;
+  }
+  .single-campaign .campaign-wrapper a:hover {
+    background-color: white;
+    color: #1367ef;
+    border-color: #1367ef;
+  }
+  .single-campaign .campaign-wrapper a i {
+    display: none;
+  }
+}
