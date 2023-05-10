@@ -127,6 +127,8 @@ header .menu-dropdown-content a:hover {
   background-color: white;
   border: 1px solid #dee0ea;
   border-radius: 0 0 5px 5px;
+  z-index: 1;
+  opacity: 0.9;
   /* transition: all 0.2s ease; */
 }
 .list-menu {

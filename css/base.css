@@ -63,10 +63,14 @@ button {
   color: #1367ef;
   background-color: white;
 }
+textarea {
+  overflow: auto;
+}
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+textarea {
   outline: none;
   border: 1px solid #dee0ea;
   padding: 8px 8px 8px 15px;
@@ -75,7 +79,8 @@ input[type="number"] {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
-input[type="number"]:focus {
+input[type="number"]:focus,
+textarea:focus {
   border-color: gray;
 }
 input[type="number"]::-webkit-inner-spin-button {
