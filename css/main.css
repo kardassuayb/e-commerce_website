@@ -15,6 +15,8 @@
 @import url(components/brand-items.css);
 @import url(components/single-campaign.css);
 @import url(components/policies.css);
+@import url(components/product-details/breadcrumb.css);
+@import url(components/product-details/product-gallery.css);
 
 /* pages */
 @import url(pages/home.css);
@@ -22,3 +24,4 @@
 @import url(pages/shop.css);
 @import url(pages/account.css);
 @import url(pages/cart.css);
+@import url(pages/product-details.css);

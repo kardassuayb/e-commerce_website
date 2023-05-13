@@ -1,0 +1,27 @@
+.single-product .product-gallery {
+  width: 50%;
+  padding-right: 15px;
+}
+.product-gallery .single-image-wrapper img {
+  width: 100%;
+}
+.product-gallery .single-image-wrapper img:hover {
+  cursor: zoom-in;
+}
+.product-gallery .gallery-thumbs {
+  display: flex;
+  gap: 10px;
+}
+.product-gallery .gallery-thumbs li {
+  display: flex;
+  cursor: pointer;
+}
+.product-gallery .gallery-thumbs li img {
+  border: 1px solid transparent;
+}
+.product-gallery .gallery-thumbs li img:hover {
+  border-color: black;
+}
+.product-gallery .gallery-thumbs li img.active {
+  border-color: black;
+}
