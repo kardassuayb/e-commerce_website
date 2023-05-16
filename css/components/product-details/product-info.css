@@ -1,0 +1,101 @@
+.product-info {
+  width: 50%;
+  padding-left: 15px;
+}
+.product-info .product-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.product-info .product-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.product-info .product-star {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.product-info .product-star i {
+  color: gold;
+}
+.product-info .product-review span {
+  color: #b1b1b1;
+}
+
+.product-info .product-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+.product-info .product-price s {
+  font-size: 18px;
+  color: #b1b1b1;
+  text-decoration-line: line-through;
+}
+.product-info .product-price p {
+  font-weight: 500;
+  color: #fe3c20;
+}
+
+.product-info .product-desc {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.product-info .colors {
+  margin: 10px 0;
+}
+.product-info .variations-form .colors .colors-label {
+  font-weight: 600;
+  margin-bottom: 5px 0;
+}
+.product-info .variations-form .colors .colors-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.product-info .variations-form .colors .color-wrapper {
+  border: 1px solid transparent;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.2s border ease;
+}
+.product-info .variations-form .colors .color-wrapper.active {
+  border-color: #e51414;
+}
+.product-info .variations-form .colors .color-wrapper label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.product-info .variations-form .colors .color-wrapper input {
+  appearance: none;
+}
+.product-info .variations-form .colors .color-wrapper:hover {
+  border-color: #e51414;
+}
+.product-info .variations-form .colors .color-wrapper .blue-color {
+  background-color: blue;
+}
+.product-info .variations-form .colors .color-wrapper .red-color {
+  background-color: red;
+}
+.product-info .variations-form .colors .color-wrapper .green-color {
+  background-color: green;
+}
+.product-info .variations-form .colors .color-wrapper .yellow-color {
+  background-color: yellow;
+}
+.product-info .variations-form .colors .color-wrapper .gray-color {
+  background-color: gray;
+}

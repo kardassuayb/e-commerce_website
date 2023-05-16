@@ -17,6 +17,7 @@
 @import url(components/policies.css);
 @import url(components/product-details/breadcrumb.css);
 @import url(components/product-details/product-gallery.css);
+@import url(components/product-details/product-info.css);
 
 /* pages */
 @import url(pages/home.css);
