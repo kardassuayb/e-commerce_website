@@ -165,6 +165,10 @@
   display: flex;
   justify-content: end;
   gap: 5px;
+  cursor: pointer;
+}
+.cart-collaterals .cart-cargo input {
+  cursor: pointer;
 }
 .cart-collaterals .cart-cargo a {
   color: #ee403d;

@@ -1,0 +1,59 @@
+.single-blog {
+  margin: 30px 0;
+}
+.single-blog figure img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+}
+.blog-wrapper .blog-meta {
+  display: flex;
+  margin: 10px 0;
+  gap: 4px;
+  font-size: 12px;
+}
+.blog-wrapper .blog-meta i {
+  color: #e51414;
+}
+.blog-wrapper .blog-tags a {
+  font-weight: 600;
+}
+.blog-wrapper .blog-tags a:hover {
+  text-decoration: underline;
+}
+.blog-wrapper .blog-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 30px 0 6px 0;
+}
+.blog-wrapper .blog-content {
+  margin-bottom: 30px;
+}
+.blog-wrapper .blog-content p {
+  text-indent: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4b4c52;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.blog-wrapper .blog-content blockquote {
+  padding: 20px 50px 12px 50px;
+  border-left: 4px solid #dee0ea;
+  border-right: 4px solid #dee0ea;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.blog-wrapper .blog-content blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #202024;
+  text-indent: 0;
+  text-align: center;
+}
+.single-blog .comment-top h3 {
+  margin-bottom: 10px;
+}
+.single-blog .comment-form-wrapper h2 {
+  margin-top: 20px;
+}

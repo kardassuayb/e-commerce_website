@@ -1,33 +1,33 @@
 /* ! comment item start */
-.single-product .comment-list {
+.tab-panel-reviews .comment-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.single-product .comment-item {
+.tab-panel-reviews .comment-item {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.single-product .comment-avatar img {
+.tab-panel-reviews .comment-avatar img {
   display: flex;
   border-radius: 50%;
 }
-.single-product .comment-star {
+.tab-panel-reviews .comment-star {
   display: flex;
 }
-.single-product .comment-star i {
+.tab-panel-reviews .comment-star i {
   color: gold;
 }
-.single-product .comment-meta {
+.tab-panel-reviews .comment-meta {
   font-size: 12px;
 }
-.single-product .comment-text {
+.tab-panel-reviews .comment-text {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.single-product .comment-desc {
+.tab-panel-reviews .comment-desc {
   font-size: 14px;
 }
 /* ! comment item end */
