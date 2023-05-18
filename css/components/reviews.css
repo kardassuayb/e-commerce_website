@@ -1,0 +1,105 @@
+/* ! comment item start */
+.single-product .comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.single-product .comment-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.single-product .comment-avatar img {
+  display: flex;
+  border-radius: 50%;
+}
+.single-product .comment-star {
+  display: flex;
+}
+.single-product .comment-star i {
+  color: gold;
+}
+.single-product .comment-meta {
+  font-size: 12px;
+}
+.single-product .comment-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.single-product .comment-desc {
+  font-size: 14px;
+}
+/* ! comment item end */
+
+/* ! comment form start */
+.single-product .comment-form-wrapper {
+  margin: 30px 0;
+}
+.comment-form-wrapper h2 {
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #dee0ea;
+  padding-bottom: 10px;
+}
+.comment-form-wrapper .comment-notes {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.comment-form-wrapper .comment-form-rating {
+  margin: 20px 0;
+  font-size: 14px;
+}
+.comment-form-wrapper span.required {
+  color: #e51414;
+}
+.comment-form-wrapper .stars {
+  display: flex;
+  margin-top: 5px;
+}
+.comment-form-wrapper .stars a {
+  display: flex;
+}
+.comment-form-wrapper .stars a:not(:last-child):after {
+  content: "|";
+  color: #dee0ea;
+  margin: 0 10px;
+}
+.comment-form-wrapper .stars a:hover i {
+  color: gold;
+}
+.comment-form-wrapper .stars i {
+  color: #dee0ea;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s color ease;
+}
+.comment-form-wrapper .comment-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 5px;
+  font-size: 14px;
+}
+.comment-form-wrapper .form-submit {
+  margin: 10px 0;
+}
+.comment-form-wrapper .comment-form-cookies {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.comment-form-wrapper .comment-form-cookies:hover input {
+  cursor: pointer;
+}
+.comment-form-wrapper .comment-form-cookies:hover label {
+  color: #1367ef;
+  cursor: pointer;
+}
+.comment-form-wrapper .form-submit input {
+  padding: 0 20px;
+}
+/* ! comment form end */

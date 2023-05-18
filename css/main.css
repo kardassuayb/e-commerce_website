@@ -18,6 +18,8 @@
 @import url(components/product-details/breadcrumb.css);
 @import url(components/product-details/product-gallery.css);
 @import url(components/product-details/product-info.css);
+@import url(components/product-details/product-tabs.css);
+@import url(components/reviews.css);
 
 /* pages */
 @import url(pages/home.css);

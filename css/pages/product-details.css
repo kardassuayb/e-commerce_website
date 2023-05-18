@@ -9,3 +9,38 @@
 .single-content .site-main {
   display: flex;
 }
+
+/* ? Responsive */
+@media (max-width: 768px) {
+  .single-product .site-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .site-main .product-gallery {
+    width: 100%;
+    padding: 0;
+  }
+  .site-main .product-info {
+    width: 100%;
+    padding: 0;
+  }
+  .product-info .values {
+    width: 100%;
+  }
+  .product-info .values .values-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .product-info .values .values-list span {
+    padding: 6px 20px;
+  }
+  .product-info .divider {
+    padding-bottom: 10px;
+  }
+  .product-info .product-meta {
+    margin: 10px 0;
+  }
+}
