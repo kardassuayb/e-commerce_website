@@ -50,9 +50,10 @@ header {
   column-gap: 16px;
   align-items: center;
 }
-.search-toggle {
+.search-button {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 .header-right i {
   font-size: 18px;
@@ -174,10 +175,12 @@ header .menu-dropdown-content a:hover {
   .header-center {
     position: fixed;
     left: -100%;
-    top: 46px;
+    top: 0px;
+    z-index: 2;
     border-right: 1px solid #dee0ea;
     height: 100%;
     background-color: white;
+    transition: 0.5s ease all;
   }
   .header-center .bi-x-circle {
     display: inline-block;

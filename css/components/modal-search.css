@@ -63,6 +63,7 @@
 .modal-search .search-form button i {
   font-size: 18px;
   color: #7a7a7a;
+  cursor: pointer;
 }
 .modal-search .search-results {
   border-top: 1px solid #dee0ea;
