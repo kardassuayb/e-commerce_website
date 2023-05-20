@@ -85,8 +85,24 @@
   width: 12px;
   height: 12px;
   background-color: #1367ef;
-  border-radius: 100%;
+  border-radius: 50%;
 }
+.slider .slider-dots .slider-dot.active {
+  opacity: 1;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 590px) {
   .slider-item {
     height: calc(100vh - 150px);
