@@ -28,11 +28,10 @@
 .products {
   margin-bottom: 40px;
 }
-.product-list {
+/* .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-}
+} */
 /*! Products End */
 
 /*! Campaigns Start */
