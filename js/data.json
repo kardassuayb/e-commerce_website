@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Analogue Resin Strap",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 109.90
+        },
+        "discount": 17,
+        "img": {
+            "singleImage": "images/products/product1/1.png",
+            "thumbs": [
+                "images/products/product1/1.png",
+                "images/products/product1/2.png",
+                "images/products/product1/3.png"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Ridley High Waist",
+        "price": {
+            "oldPrice": 265.00,
+            "newPrice": 209.90
+        },
+        "discount": 14,
+        "img": {
+            "singleImage": "images/products/product2/1.png",
+            "thumbs": [
+                "images/products/product2/1.png",
+                "images/products/product2/2.png",
+                "images/products/product2/3.png"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Blush Beanie",
+        "price": {
+            "oldPrice": 95.00,
+            "newPrice": 39.90
+        },
+        "discount": 55,
+        "img": {
+            "singleImage": "images/products/product3/1.png",
+            "thumbs": [
+                "images/products/product3/1.png",
+                "images/products/product3/2.png",
+                "images/products/product3/3.png"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Mercury Tee",
+        "price": {
+            "oldPrice": 120.00,
+            "newPrice": 49.90
+        },
+        "discount": 33,
+        "img": {
+            "singleImage": "images/products/product4/1.png",
+            "thumbs": [
+                "images/products/product4/1.png",
+                "images/products/product4/2.png",
+                "images/products/product4/3.png"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "La Bohème Rose Gold",
+        "price": {
+            "oldPrice": 175.00,
+            "newPrice": 89.90
+        },
+        "discount": 48,
+        "img": {
+            "singleImage": "images/products/product5/1.png",
+            "thumbs": [
+                "images/products/product5/1.png",
+                "images/products/product5/2.png",
+                "images/products/product5/3.png"
+            ]
+        }
+    }
+]
