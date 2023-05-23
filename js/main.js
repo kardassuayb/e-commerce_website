@@ -1,5 +1,6 @@
 import headerFunc from "./header.js";
 import productsFunc from "./products.js";
+import productsFunc2 from "./products2.js";
 
 //! add products to localStorage start
 
