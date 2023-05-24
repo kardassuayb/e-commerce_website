@@ -1,8 +1,23 @@
 import { product1 } from "./glide.js";
 
 let products = [];
-async function productsFunc() {
-  products = (await localStorage.getItem("products"))
+let cart = [];
+
+function addToCart() {
+  const buttons = [...document.getElementsByClassName("add-to-cart")];
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = e.target.dataset.id;
+      const findProduct = products.find((product) => product.id === Number(id));
+      cart.push({ ...findProduct, quantity: 1 });
+      localStorage.setItem("cart", JSON.stringify(cart));
+    });
+  });
+}
+
+function productsFunc() {
+  products = localStorage.getItem("products")
     ? JSON.parse(localStorage.getItem("products"))
     : [];
   const productsContainer = document.getElementById("product-list");
@@ -32,8 +47,12 @@ async function productsFunc() {
         </div>
         <span class="discount">-${item.discount}%</span>
         <div class="product-links">
-          <button><i class="bi bi-cart-fill"></i></button>
-          <button><i class="bi bi-heart-fill"></i></button>
+          <button class="add-to-cart" data-id=${item.id}>
+            <i class="bi bi-cart-fill"></i>
+          </button>
+          <button>
+            <i class="bi bi-heart-fill"></i>
+          </button>
           <a href="#">
             <i class="bi bi-eye-fill"></i>
           </a>
@@ -45,6 +64,7 @@ async function productsFunc() {
     </li>
     `;
     productsContainer.innerHTML = results;
+    addToCart();
   });
   product1();
 }

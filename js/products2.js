@@ -1,8 +1,7 @@
 import { product2 } from "./glide.js";
 
-let products2 = [];
-async function productsFunc2() {
-  products2 = (await localStorage.getItem("products"))
+function productsFunc2() {
+  const products2 = localStorage.getItem("products")
     ? JSON.parse(localStorage.getItem("products"))
     : [];
   const productsContainer2 = document.getElementById("product-list2");

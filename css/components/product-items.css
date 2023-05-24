@@ -102,6 +102,7 @@
 }
 .product-item .product-links i {
   color: white;
+  pointer-events: none;
 }
 
 .product-wrapper {
