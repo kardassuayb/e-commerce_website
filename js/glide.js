@@ -3,7 +3,7 @@ export function product1() {
     startAt: 0,
     perView: 4,
     gap: 20,
-    autoplay: 3000,
+    // autoplay: 3000,
     bound: true,
     breakpoints: {
       992: {
@@ -23,7 +23,6 @@ export function product1() {
 
 export function product2() {
   const config2 = {
-    type: "carousel",
     startAt: 0,
     perView: 4,
     gap: 20,

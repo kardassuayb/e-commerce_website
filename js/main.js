@@ -13,4 +13,10 @@ async function getData() {
 
 getData();
 
+const products = localStorage.getItem("products");
+
+const cartItems = document.querySelector(".header-cart-count");
+cartItems.innerHTML = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart")).length
+  : "0";
 //! add products to localStorage end
