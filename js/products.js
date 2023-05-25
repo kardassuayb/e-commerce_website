@@ -1,9 +1,9 @@
 import { product1 } from "./glide.js";
 
-let products = [];
-let cart = [];
-
-cart = localStorage.getItem("cart")
+let products = localStorage.getItem("products")
+  ? JSON.parse(localStorage.getItem("products"))
+  : [];
+let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
 
@@ -33,9 +33,6 @@ function addToCart() {
 }
 
 function productsFunc() {
-  products = localStorage.getItem("products")
-    ? JSON.parse(localStorage.getItem("products"))
-    : [];
   const productsContainer = document.getElementById("product-list");
   let results = "";
 
@@ -79,10 +76,10 @@ function productsFunc() {
       </div>
     </li>
     `;
-    productsContainer.innerHTML = results;
+    productsContainer ? (productsContainer.innerHTML = results) : "";
     addToCart();
   });
   product1();
 }
 
-export default productsFunc();
+export default productsFunc;

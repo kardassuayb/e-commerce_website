@@ -43,7 +43,7 @@ function productsFunc2() {
       </div>
     </li>
     `;
-    productsContainer2.innerHTML = results2;
+    productsContainer2 ? (productsContainer2.innerHTML = results2) : "";
   });
   product2();
 }

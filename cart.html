@@ -29,14 +29,14 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="toggle-menu"></i>
                     </div>
                     <div class="header-left">
-                        <a class="logo" href="#">
+                        <a class="logo" href="index.html">
                             <img class="logo-img" src="images/logo.png" href="#" alt="logo" />
                         </a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <div class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
@@ -113,18 +113,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <i class="bi bi-x-circle"></i>
+                        <i class="bi bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
                             <a href="#" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button href="#" class="search-toggle">
+                            <button href="#" class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#"> <i class="bi bi-heart"></i> </a>
-                            <a href="#" class="header-cart">
+                            <a href="cart.html" class="header-cart">
                                 <i class="bi bi-cart"><span class="header-cart-count">0</span></i></a>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                     </a>
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-search"></i>
         </div>
     </div>
     <!--! MODAL SEARCH END -->
@@ -198,29 +198,7 @@
                                 <th class="product-quantity">Quantity</th>
                                 <th class="product-subtotal">Subtotal</th>
                             </thead>
-                            <tbody>
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="images/products/product1/1.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$109.90</td>
-                                    <td class="product-quantity">1</td>
-                                    <td class="product-subtotal">$109.90</td>
-                                </tr>
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="images/products/product2/1.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Ridley High Waist</td>
-                                    <td>$209.90</td>
-                                    <td class="product-quantity">1</td>
-                                    <td class="product-subtotal">$209.90</td>
-                                </tr>
+                            <tbody class="cart-wrapper">
                             </tbody>
                         </table>
                         <div class="actions-wrapper">
@@ -246,13 +224,15 @@
                                 <tr>
                                     <th>Shipping</th>
                                     <td class="cart-cargo">
-                                        <span>Fast Cargo: $15.00<input type="checkbox" name="" id=""></span>
+                                        <label>
+                                            <span>Fast Cargo: $15.00<input type="checkbox" id="fast-cargo"></span>
+                                        </label>
                                         <a href="#">Change Adress</a>
                                     </td>
                                 </tr>
                                 <tr class="cart-total">
                                     <th>Total</th>
-                                    <td><strong>$319.80</strong></td>
+                                    <td><strong id="cart-total">$319.80</strong></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -484,6 +464,10 @@
         </div>
     </footer>
     <!--! FOOTER END -->
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
+
 </body>
 
 </html>
