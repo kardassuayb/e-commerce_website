@@ -9,8 +9,8 @@
   cursor: zoom-in;
 }
 .product-gallery .gallery-thumbs {
-  display: flex;
-  gap: 10px;
+  /* display: flex;
+  gap: 10px; */
 }
 .product-gallery .gallery-thumbs li {
   display: flex;
@@ -24,4 +24,20 @@
 }
 .product-gallery .gallery-thumbs li img.active {
   border-color: black;
+}
+.product-gallery .product-thumb {
+  position: relative;
+}
+.product-gallery .glide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  font-size: 30px;
+}
+.product-gallery .glide__arrow--left {
+  left: 0;
+}
+.product-gallery .glide__arrow--right {
+  right: 0;
 }
