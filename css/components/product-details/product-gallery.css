@@ -2,8 +2,14 @@
   width: 50%;
   padding-right: 15px;
 }
+.product-gallery .single-image-wrapper {
+  overflow: hidden;
+}
 .product-gallery .single-image-wrapper img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
 }
 .product-gallery .single-image-wrapper img:hover {
   cursor: zoom-in;

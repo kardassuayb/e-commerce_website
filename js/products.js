@@ -36,11 +36,11 @@ function productRoute() {
   const productLink = Array.from(
     document.getElementsByClassName("product-link")
   );
+
   productLink.forEach((button) => {
     button.addEventListener("click", function (e) {
       e.preventDefault();
       const id = e.target.dataset.id;
-      console.log(id);
       localStorage.setItem("productId", JSON.stringify(id));
       window.location.href = "product-details.html";
     });
