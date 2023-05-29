@@ -48,16 +48,16 @@ export function product2() {
 
 export function singleThumbs() {
   const config3 = {
-    perView: 5,
+    perView: 3,
     breakpoints: {
       992: {
         perView: 3,
       },
       768: {
-        perView: 2,
+        perView: 3,
       },
       576: {
-        perView: 1,
+        perView: 3,
       },
     },
   };

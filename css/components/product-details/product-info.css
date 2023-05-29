@@ -145,6 +145,10 @@
 .detail-product-info .cart-button button {
   width: 200px;
 }
+.detail-product-info .cart-button button:disabled {
+  color: #1367ef;
+  background-color: white;
+}
 .detail-product-info .product-extra-buttons {
   display: flex;
   align-items: center;

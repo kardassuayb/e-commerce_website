@@ -1,6 +1,8 @@
 import { thumbsActiveFunc } from "../js/product-detail/thumbsActive.js";
 import zoomFunc from "../js/product-detail/zoom.js";
 import { singleThumbs } from "../js/glide.js";
+import colorsFunc from "../js/product-detail/colors.js";
+import valuesFunc from "../js/product-detail/values.js";
 
 const productId = localStorage.getItem("productId")
   ? JSON.parse(localStorage.getItem("productId"))
@@ -42,3 +44,26 @@ findProduct.img.thumbs.forEach((item) => {
 galleryThumbs.innerHTML = result;
 singleThumbs();
 thumbsActiveFunc();
+
+/* add to Cart */
+
+let cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
+
+const findCart = cart.find((item) => item.id === findProduct.id);
+
+const btnaddtoCart = document.getElementById("add-to-cart");
+const quantityDOM = document.getElementById("quantity");
+let cartItems = document.querySelector(".header-cart-count");
+
+if (findCart) {
+  btnaddtoCart.setAttribute("disabled", "disabled");
+} else {
+  btnaddtoCart.addEventListener("click", function () {
+    cart.push({ ...findProduct, quantity: Number(quantityDOM.value) });
+    btnaddtoCart.setAttribute("disabled", "disabled");
+    localStorage.setItem("cart", JSON.stringify(cart));
+    cartItems.innerHTML = cart.length;
+  });
+}

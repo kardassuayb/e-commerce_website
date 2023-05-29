@@ -14,17 +14,17 @@ function displayCartProduct() {
             <i class="bi bi-x delete-cart" data-id=${item.id}></i>
         </td>
         <td>${item.name}</td>
-        <td>${item.price.newPrice.toFixed(2)}</td>
+        <td>$${item.price.newPrice.toFixed(2)}</td>
         <td class="product-quantity">${item.quantity}</td>
-        <td class="product-subtotal">${(
+        <td class="product-subtotal">$${(
           item.price.newPrice * item.quantity
         ).toFixed(2)}</td>
     </tr>
     `;
   });
   cartWrapper.innerHTML = result;
-
   removeCartItem();
+  updateCartItemsCount();
 }
 
 displayCartProduct();
@@ -32,16 +32,26 @@ displayCartProduct();
 function removeCartItem() {
   const cartItems = document.querySelector(".header-cart-count");
   const btnDeleteCart = document.querySelectorAll(".delete-cart");
+  const productQuantity = document.querySelector(".product-quantity");
   btnDeleteCart.forEach((button) => {
     button.addEventListener("click", function (e) {
       const id = e.target.dataset.id;
       cart = cart.filter((item) => item.id !== Number(id));
       displayCartProduct();
       localStorage.setItem("cart", JSON.stringify(cart));
-      cartItems.innerHTML = cart.length;
+      // cartItems.innerHTML = `${item.quantity}`;
       saveCartValues();
     });
   });
+}
+
+function updateCartItemsCount() {
+  const cartItems = document.querySelector(".header-cart-count");
+  let itemsCount = 0;
+  cart.forEach((item) => {
+    itemsCount += item.quantity;
+  });
+  cartItems.innerHTML = itemsCount;
 }
 
 function saveCartValues() {
