@@ -1,6 +1,7 @@
 import headerFunc from "./header.js";
 import productsFunc from "./products.js";
 import productsFunc2 from "./products2.js";
+import searchFunc from "./search.js";
 
 //! add products to localStorage start
 
@@ -10,6 +11,7 @@ import productsFunc2 from "./products2.js";
 
   data ? localStorage.setItem("products", JSON.stringify(data)) : [];
   productsFunc();
+  searchFunc(data);
 })();
 //! add products to localStorage end
 
