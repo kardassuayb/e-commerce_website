@@ -84,6 +84,7 @@ header {
 }
 .header-center .menu-link.active {
   border-bottom: 1px solid #1367ef;
+  color: #1367ef;
 }
 
 /*! MENU DROPDOWN START */
