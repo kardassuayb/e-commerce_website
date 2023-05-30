@@ -326,12 +326,12 @@
                 <!-- tabs start -->
                 <div class="single-tabs">
                     <ul class="tab-list">
-                        <li><a href="#" class="tab-button active">Description</a></li>
-                        <li><a href="#" class="tab-button">Additional Information</a></li>
-                        <li><a href="#" class="tab-button">Reviews</a></li>
+                        <li><a href="#" class="tab-button active" data-id="desc">Description</a></li>
+                        <li><a href="#" class="tab-button" data-id="info">Additional Information</a></li>
+                        <li><a href="#" class="tab-button" data-id="reviews">Reviews</a></li>
                     </ul>
                     <div class="tab-panel">
-                        <div class="tab-panel-desc">
+                        <div class="tab-panel-desc content" id="desc">
                             <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
                                 finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat
                                 ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales
@@ -346,7 +346,7 @@
                                 Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare
                                 vel, dignissim a tortor.</p>
                         </div>
-                        <div class="tab-panel-info">
+                        <div class="tab-panel-info content" id="info">
                             <h3>Additional Information</h3>
                             <table>
                                 <tbody>
@@ -365,7 +365,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="tab-panel-reviews">
+                        <div class="tab-panel-reviews content active" id="reviews">
                             <div class="comment-top">
                                 <h3>2 reviews for Ridley High Waist</h3>
                                 <div class="comments">
@@ -463,11 +463,11 @@
                                     </div>
                                     <div class="comment-form-comment comment-flex">
                                         <label for="comment">Your Review <span class="required">*</span></label>
-                                        <textarea id="comment" cols="50" rows="10"></textarea>
+                                        <textarea id="comment-text" cols="50" rows="10" required></textarea>
                                     </div>
                                     <div class="comment-form-author comment-flex">
                                         <label for="name">Name<span class="required">*</span></label>
-                                        <input id="name" type="text">
+                                        <input id="comment-name" type="text" required>
                                     </div>
                                     <div class="comment-form-email comment-flex">
                                         <label for="email">E-mail<span class="required">*</span></label>

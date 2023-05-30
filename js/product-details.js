@@ -3,6 +3,8 @@ import zoomFunc from "../js/product-detail/zoom.js";
 import { singleThumbs } from "../js/glide.js";
 import colorsFunc from "../js/product-detail/colors.js";
 import valuesFunc from "../js/product-detail/values.js";
+import tabsFunc from "../js/product-detail/tabs.js";
+import commentsFunc from "../js/product-detail/comments.js";
 
 const productId = localStorage.getItem("productId")
   ? JSON.parse(localStorage.getItem("productId"))

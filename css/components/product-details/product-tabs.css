@@ -17,6 +17,12 @@
 .single-tabs .tab-panel-desc {
   font-size: 14px;
 }
+.single-tabs .content {
+  display: none;
+}
+.single-tabs .content.active {
+  display: block;
+}
 .single-tabs h3 {
   font-size: 16px;
   font-weight: 500;

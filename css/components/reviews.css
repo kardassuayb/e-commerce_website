@@ -65,6 +65,9 @@
   color: #dee0ea;
   margin: 0 10px;
 }
+.comment-form-wrapper .star.active i {
+  color: gold;
+}
 .comment-form-wrapper .stars a:hover i {
   color: gold;
 }
