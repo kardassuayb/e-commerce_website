@@ -11,6 +11,7 @@ import searchFunc from "./search.js";
 
   data ? localStorage.setItem("products", JSON.stringify(data)) : [];
   productsFunc(data);
+  productsFunc2(data);
   searchFunc(data);
 })();
 //! add products to localStorage end
