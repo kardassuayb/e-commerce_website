@@ -30,14 +30,28 @@ function addToCart(products) {
 }
 
 function productRoute() {
-  const productLink = Array.from(
+  const productLinks = Array.from(
     document.getElementsByClassName("product-link")
   );
 
-  productLink.forEach((button) => {
-    button.addEventListener("click", function (e) {
+  productLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
       e.preventDefault();
       const id = e.target.dataset.id;
+      localStorage.setItem("productId", JSON.stringify(id));
+      window.location.href = "product-details.html";
+    });
+  });
+
+  const productImages = Array.from(
+    document.getElementsByClassName("product-image")
+  );
+
+  productImages.forEach((image) => {
+    image.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id =
+        e.currentTarget.parentElement.querySelector(".product-link").dataset.id;
       localStorage.setItem("productId", JSON.stringify(id));
       window.location.href = "product-details.html";
     });
@@ -52,13 +66,15 @@ function productsFunc2(products) {
     results2 += `
     <li class="product-item glide__slide">
       <div class="product-image">
-        <a href="#">
+        <a href="#" class="product-link" data-id=${item.id}>
           <img class="img1" src=${item.img.singleImage} alt="">
           <img class="img2" src=${item.img.thumbs[1]} alt="">
         </a>
       </div>
       <div class="product-info">
-        <a href="#" class="product-title">${item.name}</a>
+        <a href="#" class="product-title product-link" data-id=${item.id}>${
+      item.name
+    }</a>
         <ul class="product-star">
           <li><i class="bi bi-star-fill"></i></li>
           <li><i class="bi bi-star-fill"></i></li>
