@@ -10,7 +10,7 @@ import searchFunc from "./search.js";
   const data = await products.json();
 
   data ? localStorage.setItem("products", JSON.stringify(data)) : [];
-  productsFunc();
+  productsFunc(data);
   searchFunc(data);
 })();
 //! add products to localStorage end
