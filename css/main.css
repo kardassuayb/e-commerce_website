@@ -20,6 +20,7 @@
 @import url(components/product-details/product-info.css);
 @import url(components/product-details/product-tabs.css);
 @import url(components/reviews.css);
+@import url(components/modal-dialog.css);
 
 /* pages */
 @import url(pages/home.css);
