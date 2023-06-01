@@ -29,14 +29,14 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="toggle-menu"></i>
                     </div>
                     <div class="header-left">
                         <a class="logo" href="index.html">
                             <img class="logo-img" src="images/logo.png" href="#" alt="logo" />
                         </a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <div class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
@@ -113,18 +113,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <i class="bi bi-x-circle"></i>
+                        <i class="bi bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
-                            <a href="#" class="header-account">
+                            <a href="account.html" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button href="#" class="search-toggle">
+                            <button href="#" class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#"> <i class="bi bi-heart"></i> </a>
-                            <a href="#" class="header-cart">
+                            <a href="cart.html" class="header-cart">
                                 <i class="bi bi-cart"><span class="header-cart-count">0</span></i></a>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                     </a>
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-search"></i>
         </div>
     </div>
     <!--! MODAL SEARCH END -->
@@ -458,6 +458,9 @@
         </div>
     </footer>
     <!--! FOOTER END -->
+
+    <script src="js/main.js" type="module"></script>
+
 </body>
 
 </html>

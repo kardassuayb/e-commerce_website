@@ -30,6 +30,7 @@ function searchModalFunc() {
   //! search modal start
   const btnOpenSearch = document.querySelector(".search-button");
   const modalSearch = document.querySelector(".modal-search");
+  const modalWrapper = document.querySelector(".modal-wrapper");
   const btnCloseSearch = document.querySelector("#close-search");
 
   btnOpenSearch.addEventListener("click", () => {
@@ -44,7 +45,7 @@ function searchModalFunc() {
   document.addEventListener("click", (event) => {
     if (
       !event.composedPath().includes(btnOpenSearch) &&
-      !event.composedPath().includes(modalSearch)
+      !event.composedPath().includes(modalWrapper)
     ) {
       modalSearch.style.visibility = "hidden";
     }

@@ -29,18 +29,18 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="toggle-menu"></i>
                     </div>
                     <div class="header-left">
                         <a class="logo" href="index.html">
                             <img class="logo-img" src="images/logo.png" href="#" alt="logo" />
                         </a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <div class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
-                                    <a href="index.html" class="menu-link home">HOME <i
+                                    <a href="index.html" class="menu-link home ">HOME <i
                                             class="bi bi-chevron-down"></i></a>
                                     <div class="menu-dropdown-wrapper">
                                         <ul class="menu-dropdown-content">
@@ -57,7 +57,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-list-item">
-                                    <a href="shop.html" class="menu-link">SHOP <i class="bi bi-chevron-down"></i></a>
+                                    <a href="shop.html" class="menu-link ">SHOP <i class="bi bi-chevron-down"></i></a>
                                     <div class="mega-dropdown-wrapper">
                                         <div class="list-menu">
                                             <div class="list-menu-left">
@@ -113,18 +113,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <i class="bi bi-x-circle"></i>
+                        <i class="bi bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
-                            <a href="#" class="header-account">
+                            <a href="account.html" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button href="#" class="search-toggle">
+                            <button href="#" class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#"> <i class="bi bi-heart"></i> </a>
-                            <a href="#" class="header-cart">
+                            <a href="cart.html" class="header-cart">
                                 <i class="bi bi-cart"><span class="header-cart-count">0</span></i></a>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                     </a>
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-search"></i>
         </div>
     </div>
     <!--! MODAL SEARCH END -->
@@ -184,7 +184,7 @@
             </div>
             <ul class="blog-list">
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="images/blogs/blog1.jpg" alt="">
                     </a>
                     <div class="blog-info">
@@ -197,12 +197,12 @@
                             <a href="#">Aliquam hendrerit mi metus</a>
                         </div>
                         <div class="blog-info-bottom">
-                            <a href="#">Read More..</a>
+                            <a href="single-blog.html">Read More..</a>
                         </div>
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="images/blogs/blog2.jpg" alt="">
                     </a>
                     <div class="blog-info">
@@ -215,12 +215,12 @@
                             <a href="#">Aliquam hendrerit mi metus</a>
                         </div>
                         <div class="blog-info-bottom">
-                            <a href="#">Read More..</a>
+                            <a href="single-blog.html">Read More..</a>
                         </div>
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="images/blogs/blog3.jpg" alt="">
                     </a>
                     <div class="blog-info">
@@ -233,14 +233,14 @@
                             <a href="#">Aliquam hendrerit mi metus</a>
                         </div>
                         <div class="blog-info-bottom">
-                            <a href="#">Read More..</a>
+                            <a href="single-blog.html">Read More..</a>
                         </div>
                     </div>
                 </li>
             </ul>
             <ul class="blog-list">
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="images/blogs/blog4.jpg" alt="">
                     </a>
                     <div class="blog-info">
@@ -253,12 +253,12 @@
                             <a href="#">Aliquam hendrerit mi metus</a>
                         </div>
                         <div class="blog-info-bottom">
-                            <a href="#">Read More..</a>
+                            <a href="single-blog.html">Read More..</a>
                         </div>
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="images/blogs/blog5.jpg" alt="">
                     </a>
                     <div class="blog-info">
@@ -271,12 +271,12 @@
                             <a href="#">Aliquam hendrerit mi metus</a>
                         </div>
                         <div class="blog-info-bottom">
-                            <a href="#">Read More..</a>
+                            <a href="single-blog.html">Read More..</a>
                         </div>
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="images/blogs/blog6.jpg" alt="">
                     </a>
                     <div class="blog-info">
@@ -289,7 +289,7 @@
                             <a href="#">Aliquam hendrerit mi metus</a>
                         </div>
                         <div class="blog-info-bottom">
-                            <a href="#">Read More..</a>
+                            <a href="single-blog.html">Read More..</a>
                         </div>
                     </div>
                 </li>
@@ -516,6 +516,8 @@
         </div>
     </footer>
     <!--! FOOTER END -->
+
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
