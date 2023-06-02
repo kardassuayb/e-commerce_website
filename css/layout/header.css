@@ -2,6 +2,11 @@
 
 header {
   border-bottom: 1px solid #dee0ea;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 20;
 }
 .global-notification {
   background-color: #1367ef;
