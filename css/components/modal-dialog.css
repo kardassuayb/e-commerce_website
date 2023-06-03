@@ -25,6 +25,7 @@
   opacity: 0.5;
 }
 .modal-content {
+  margin-top: 140px;
   max-width: 800px;
   width: 100%;
   background-color: white;

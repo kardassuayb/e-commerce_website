@@ -21,6 +21,7 @@
   opacity: 0.5;
 }
 .modal-wrapper {
+  margin-top: 240px;
   max-width: 800px;
   width: 100%;
   background-color: white;
@@ -130,6 +131,11 @@
   }
   .modal-search .results {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .modal-search .modal-wrapper {
+    margin-top: 420px;
   }
 }
 /*! Modal Search Responsive End */
